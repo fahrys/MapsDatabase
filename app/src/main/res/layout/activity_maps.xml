@@ -22,10 +22,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:fontFamily="@font/carter_one"
             android:gravity="center"
+            android:text="Kegiatan :"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:text="Kegiatan :"/>
+            android:textStyle="bold" />
 
         <EditText
             android:layout_width="match_parent"
@@ -38,10 +39,14 @@
 
     <Button
         android:id="@+id/btnset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bottom_style"
+        android:fontFamily="@font/chewy"
         android:text="set"
+        android:textSize="20dp"
         app:backgroundTint="#A3544E" />
 
 </LinearLayout>

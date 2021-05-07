@@ -31,9 +31,9 @@ class ItemAdapter (val context: Context , val items: ArrayList<EmpModel>) : Recy
         holder.tvwaktu.text = item.waktu
         holder.no.text = position.toString()
         if(position % 2 == 0) {
-            holder.Linlay.setBackgroundColor(ContextCompat.getColor(context, R.color.green))
+            holder.Linlay.setBackgroundColor(ContextCompat.getColor(context, R.color.brown))
         }else{
-            holder.Linlay.setBackgroundColor(ContextCompat.getColor(context,R.color.purple_700))
+            holder.Linlay.setBackgroundColor(ContextCompat.getColor(context,R.color.white))
         }
 
     }

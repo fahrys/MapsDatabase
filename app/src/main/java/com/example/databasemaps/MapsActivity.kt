@@ -133,9 +133,7 @@ class MapsActivity : AppCompatActivity() {
                                         1
                                     )
                                     currentAddress = geocoderresult[0].getAddressLine(0)
-                                    currentTime = SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(
-                                            Date()
-                                        )
+                                    currentTime = SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(Date())
 
                                     var myLocation = LatLng(currentLatitude, currentLogtitude)
                                     mMap.addMarker(
