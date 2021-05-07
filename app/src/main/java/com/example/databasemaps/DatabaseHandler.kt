@@ -81,5 +81,15 @@ class DatabaseHandler (context: Context) : SQLiteOpenHelper(context , DATABASE_N
         return empList
     }
 
+    // Tombol Delete
+    fun deleteEmployee(emp: EmpModel): Int {
+        val db = this.writableDatabase
+        val contentValues = ContentValues()
+        contentValues.put(KEY_ID, emp.id)
+
+        val success = db.delete(TABLE_CONTACTS, KEY_ID + "=" + emp.id, null)
+        db.close()
+        return success
+    }
 
 }

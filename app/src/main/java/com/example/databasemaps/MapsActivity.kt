@@ -133,7 +133,7 @@ class MapsActivity : AppCompatActivity() {
                                         1
                                     )
                                     currentAddress = geocoderresult[0].getAddressLine(0)
-                                    currentTime = SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(Date())
+                                    currentTime = SimpleDateFormat("dd.MM.yyyy 'Jam' HH:mm", Locale.getDefault()).format(Date())
 
                                     var myLocation = LatLng(currentLatitude, currentLogtitude)
                                     mMap.addMarker(
@@ -163,6 +163,7 @@ class MapsActivity : AppCompatActivity() {
 
     ////////
 
+    // Menambahkan List
     private fun addRecord(){
 
         val kegiatan = etkegiatan.text.toString()

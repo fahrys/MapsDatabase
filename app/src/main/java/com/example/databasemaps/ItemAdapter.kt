@@ -14,6 +14,7 @@ class ItemAdapter (val context: Context , val items: ArrayList<EmpModel>) : Recy
         val tvkegiatan = view.tvkegiatan
         val tvwaktu = view.tvwaktu
         val tvlokasi = view.tvlokasi
+        val ivDelete = view.iv_delete
         val no = view.tvid
     }
 
@@ -35,7 +36,11 @@ class ItemAdapter (val context: Context , val items: ArrayList<EmpModel>) : Recy
         }else{
             holder.Linlay.setBackgroundColor(ContextCompat.getColor(context,R.color.white))
         }
-
+        holder.ivDelete.setOnClickListener{
+            if (context is History){
+                context.deleteRecordAlertDialog(item)
+            }
+        }
     }
 
     override fun getItemCount(): Int {
