@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.5"
         android:text="No"
+        android:gravity="center"
         android:id="@+id/tvid"
         android:textColor="@color/black" />
 
@@ -20,6 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1.7"
         android:id="@+id/tvkegiatan"
+        android:gravity="center_vertical"
         android:text="Nama Kegiatan"
         android:textColor="@color/black"/>
     <TextView
@@ -27,6 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:id="@+id/tvwaktu"
+        android:gravity="center"
         android:text="Waktu"
         android:textColor="@color/black" />
 
