@@ -5,50 +5,81 @@
     android:id="@+id/linlay"
     android:gravity="center_vertical"
     android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:textStyle="bold|italic"
+            android:textSize="16dp"
+            android:id="@+id/tvkegiatan"
+            android:text="Nama Kegiatan"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:id="@+id/iv_delete"
+            android:src="@drawable/ic_baseline_remove_24"
+            android:contentDescription="Image"
+            android:foreground="?attr/selectableItemBackground"
+            android:scaleType="center"
+            />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
     android:orientation="horizontal"
-    android:weightSum="5">
+    android:weightSum="3"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
 
     <TextView
+        android:id="@+id/tvid"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_weight="0.5"
-        android:text="No"
+        android:fontFamily="@font/contrail_one"
         android:gravity="center"
-        android:id="@+id/tvid"
+        android:text="No"
         android:textColor="@color/black" />
 
     <TextView
+        android:id="@+id/tvwaktu"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1.2"
-        android:id="@+id/tvkegiatan"
-        android:text="Nama Kegiatan"
-        android:textColor="@color/black"/>
-    <TextView
-        android:layout_width="0dp"
+        android:textStyle="bold"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:id="@+id/tvwaktu"
+        android:textSize="17dp"
+        android:fontFamily="@font/crete_round_italic"
         android:text="Waktu"
         android:textColor="@color/black" />
 
     <TextView
         android:layout_width="0dp"
         android:id="@+id/tvlokasi"
+        android:fontFamily="@font/contrail_one"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
+        android:textStyle="bold"
+        android:layout_weight="1.4"
         android:text="Lokasi"
         android:textColor="@color/black"/>
 
-    <ImageView
-        android:layout_width="0dp"
-        android:layout_height="19dp"
-        android:layout_weight="0.3"
-        android:id="@+id/iv_delete"
-        android:src="@drawable/ic_baseline_delete_24"
-        android:contentDescription="Image"
-        android:foreground="?attr/selectableItemBackground"
-        android:scaleType="center"
-        />
+
+
+
+</LinearLayout>
+
 
 </LinearLayout>

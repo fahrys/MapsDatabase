@@ -54,8 +54,8 @@ class History : AppCompatActivity() {
     fun deleteRecordAlertDialog(empModel: EmpModel) {
         val builder = AlertDialog.Builder(this)
 
-        builder.setTitle("Hapus?")
-        builder.setMessage("Hapus Data Terpilih?")
+        builder.setTitle("Hapus")
+        builder.setMessage("Hapus Data History?")
         builder.setIcon(android.R.drawable.ic_delete)
 
         // menampilkan tombol yes

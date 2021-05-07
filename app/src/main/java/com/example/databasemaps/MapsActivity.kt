@@ -38,6 +38,7 @@ class MapsActivity : AppCompatActivity() {
         btnset.setOnClickListener{
     addRecord()
         }
+        supportActionBar!!.subtitle = "Created By Fahri"
 
     }
 
