@@ -57,7 +57,6 @@ class MapsActivity : AppCompatActivity() {
         }
 
         return super.onOptionsItemSelected(item)
-
     }
 
     //////
